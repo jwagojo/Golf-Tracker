@@ -9,4 +9,5 @@ Requirements (pip):
   pip install ultralytics trackers supervision opencv-python
 
 Usage:
-  python golf_ball_tracker.py input_golf.mp4 output_tracked_golf.mp4
+  python gtracker.py input.mp4 
+  output_tracked_golf.mp4

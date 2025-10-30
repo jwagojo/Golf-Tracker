@@ -9,7 +9,6 @@ import numpy as np
 from trackers.core.sort.tracker import SORTTracker
 import supervision as sv
 
-# -------- GOLF TRACKING CONFIG ----------
 MODEL_PATH = "yolov8n.pt"   # Use YOLOv8 trained model
 CONF_THRESH = 0.25          # Lower threshold for small golf balls
 IOU_THRESH = 0.2            # Lower IOU for small object tracking
@@ -18,11 +17,10 @@ MAX_BALL_SIZE = 100         # Maximum pixel size for golf ball detection
 SPORTS_BALL_CLASS_ID = 32   # COCO class ID for sports ball (includes golf balls)
 PERSON_CLASS_ID = 0         # COCO class ID for person
 
-# Swing detection parameters
 MIN_SPEED_FOR_STROKE = 50   # Minimum pixel speed to consider a stroke
 STROKE_COOLDOWN_FRAMES = 30 # Frames to wait before detecting next stroke
 MAX_STROKE_DISTANCE = 300   # Maximum distance ball can travel in one stroke detection
-# -----------------------------------------
+
 
 class StrokeTracker:
     def __init__(self):
